@@ -121,13 +121,14 @@ To manage and control I/O operations and I/O devices.
 
 ---
 
-## 📌 Quick Revision
+## Q. How will communication happen between User Mode and Kernel Mode?
 
-| Kernel Type | Main Idea |
-|---|---|
-| Monolithic Kernel | Most operating system services run in kernel space |
-| Microkernel | Only essential services run in kernel space |
-| Hybrid Kernel | Combines monolithic and microkernel design approaches |
-| Nano Kernel | Extremely small kernel with minimal low-level functionality |
-| Exokernel | Securely exposes hardware resources for application-level management |
+**Ans: Inter-Process Communication (IPC)**
 
+1. Two processes execute independently and have their own separate memory spaces (**Memory Protection**). However, some processes may need to communicate with each other to work together.
+
+2. Communication is done through:
+   - **Shared Memory:** Processes communicate by accessing a shared memory area.
+   - **Message Passing:** Processes exchange information by sending and receiving messages.
+
+---
